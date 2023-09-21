@@ -13,14 +13,20 @@
 }
 
 .container {
-    background-color: #fff;
-    width: 200px;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
-.heart-img {
-    width: 100%;
-    height: 100%;
+.element {
+    cursor: pointer;
+}
+
+
+.element img {
+    width: 100px;
+    height: 100px;
     background-image: cover;
     background-repeat: no-repeat;
     animation: hearting 3s infinite;

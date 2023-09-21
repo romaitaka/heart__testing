@@ -11,8 +11,21 @@
 
 <body class="body">
     <div class="container">
-        <img src="heart.png" alt="Сердце" class="heart-img">
+        <div class="element" onclick="toggleImage(this)">
+            <img id="image" src="heart.png" alt="Сердечко">
+        </div>
     </div>
+
+    <script>
+        function toggleImage(element) {
+            const img = document.getElementById('image');
+            if (img.src.endsWith('heart.png')) {
+                img.src = 'poo.png'; // Замените на путь к вашему второму изображению
+            } else {
+                img.src = 'heart.png'; // Замените на путь к вашему первому изображению
+            }
+        }
+    </script>
 </body>
 
 </html>
